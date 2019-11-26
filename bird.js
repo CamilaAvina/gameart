@@ -11,6 +11,7 @@ function Bird (){
   }
   this.up = function (){
     this.velocity += -this.gravity* 10;
+    println(this.velocity);
   }
 
 this.update = function(){
