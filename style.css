@@ -1,54 +1,8 @@
- body {
-  margin: 0;
+html,body{
+  margin:0;
   padding: 0;
- background-image: linear-gradient(pink, orange, purple);
 }
-}
-canvas {
-  display: block;
-
-}
-.row{
-  display: flex;
-}
-.column{
-  margin: 10px;
-  flex: 50%;
-}
-#inputFields{
-  display: flex;
-  flex-direction: column;
-
-  padding-right: 750px;
-  padding-left: 10px;
-}
-h1{
-  text-align: center;
-  font-size: 50px;
-}
-h2{
-  margin-left: 80px;
-  margin-right: 80px;
-  text-align: center;
-  font-size: 22px;
-  font-family: cursive;
-}
-input{
-line-height: 3.3;
-font-size: 12px;
-}
-p{
-font-size: 20px;
-text-align: right;
-font-family: 'Indie Flower', cursive;
-
-}
-button{
-  background-color: cornsilk;
-  font-size: 18px;
-  font-family:  'Indie Flower', cursive;
-
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-
+canvas{
+  display:block;
+  margin: 100px auto;
 }
