@@ -3,7 +3,6 @@ var pipes = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  ship = new Ship();
   pipes.push(new Pipe());
 }
 
