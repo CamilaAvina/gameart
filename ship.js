@@ -1,8 +1,5 @@
 let img;
 
-
-
-
 function Ship(){
   this.y = height/2;
   this.x = 25;

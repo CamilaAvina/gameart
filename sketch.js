@@ -30,16 +30,7 @@ function draw() {
     //cnv.mouseClicked(level1MousedClicked);
   }
 
-    for (var i = pipes.length-1; i >= 0; i--) {
-    pipes[i].show();
-    pipes[i].update();
 
-      if (pipes[i].hits(ship)) {
-      }
-      if (pipes[i].offscreen()){
-      pipes.splice(i, 1);
-    }
-  }
 
   ship.update();
 
@@ -74,6 +65,16 @@ function titleMouseClicked(){
 function level1(){
 background(bg);
     ship.show();
+    for (var i = pipes.length-1; i >= 0; i--) {
+    pipes[i].show();
+    pipes[i].update();
+
+      if (pipes[i].hits(ship)) {
+      }
+      if (pipes[i].offscreen()){
+      pipes.splice(i, 1);
+    }
+  }
 
 }
 
