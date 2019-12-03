@@ -9,7 +9,7 @@ function setup() {
   bg = loadImage('assets/space.png');
   img = loadImage('assets/spaceship.png');
 
-  createCanvas(800, 400);
+  createCanvas(1100, 400);
   ship = new Ship()
   pipes.push(new Pipe());
 
