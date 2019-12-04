@@ -29,7 +29,12 @@ function Pipe() {
     if (this.highlight) {
       fill(255, 0, 0);
       noLoop();
+<<<<<<< HEAD
       text('GAMEOVER', width / 2, height / 2);
+=======
+      text('GAMEOVER', width/2, height/2);
+
+>>>>>>> 04fd2f12a12c4880feb684b316337fd3496a3efa
     }
     image(deb, this.x, this.top, 60,60);
     image(deb, this.x, height - this.bottom, 60,60);
