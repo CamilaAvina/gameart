@@ -2,17 +2,20 @@ let bg;
 let index;
 let state = 'title';
 let cnv;
-let button;
 var ship;
 var pipes = [];
+let button;
 function setup() {
   bg1 = loadImage('assets/Shatterdearth.png');
   bg = loadImage('assets/space.png');
   img = loadImage('assets/spaceship.png');
   nes = loadImage('assets/NES.png');
-  car = loadImage('assets/car.png');
+  car = loadImage('assets/sketch.png');
   trash = loadImage('assets/trash.png');
 
+  button = createButton('GAMEOVER');
+button.position( width/2, height/2);
+button.mousePressed(title);
 
 
   createCanvas(1100, 400);
@@ -38,7 +41,6 @@ function draw() {
 
 
 
-
   ship.update();
 
   if (frameCount % 100 == 0 ){
@@ -55,6 +57,7 @@ function keyPressed(){
 }
 
 function title(){
+  button.hide();
 background(bg1);
 textSize(100);
 stroke(255);
