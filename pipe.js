@@ -28,6 +28,15 @@ function Pipe() {
     if (this.highlight) {
       fill(255, 0, 0);
       noLoop();
+<<<<<<< HEAD
+    button= createButton('GAMEOVER');
+    button.position( width/2, height/2);
+    button.mousePressed(title);
+    }
+
+    rect(this.x, 0, this.w, this.top)
+    rect(this.x, height-this.bottom, this.w, this.bottom)
+=======
       text('GAMEOVER', width/2, height/2);
     }
 
@@ -35,6 +44,7 @@ function Pipe() {
     image(deb, this.x, this.top, 60,60);
     image(deb, this.x, height - this.bottom, 60,60);
 
+>>>>>>> 2201a5e968d52202456f2a3a1a09305cc57cbf03
   }
 
   this.update = function() {
