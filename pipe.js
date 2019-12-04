@@ -1,8 +1,9 @@
 function Pipe() {
   debris = [nes, car, trash];
-  this.y = random(height);
-  //this.bottom = random(height / 2.5);
+  this.top = random(height / 2.5);
+  this.bottom = random(height / 2.5);
   var deb = debris[Math.floor(Math.random() * debris.length)];
+  console.log(deb);
   //this.debris = random(imageArray)
   // this.r = this.image.width
   // instead of top and bottom you will need this.y and this.r
@@ -13,19 +14,12 @@ function Pipe() {
   this.highlight = false;
 
   this.hits = function(ship) {
-    // if (ship.y < this.top || ship.y > height - this.bottom) {
-    //   if (ship.x > this.x && ship.x < this.x + 20) {
-    //     this.highlight = true;
-    //     return true;
-    //   }
-    // }
-    if (dist(ship.x, ship.y ,this.x, this.y)< 30){
-
-      this.highlight = true;
-          return true;
+    if (ship.y < this.top || ship.y > height - this.bottom) {
+      if (ship.x > this.x && ship.x < this.x + 20) {
+        this.highlight = true;
+        return true;
+      }
     }
-
-
     this.highlight = false;
     return false;
   }
@@ -35,12 +29,21 @@ function Pipe() {
     if (this.highlight) {
       fill(255, 0, 0);
       noLoop();
-      button.show();
+
+
+    button.mousePressed(title);
+    }
+
+    rect(this.x, 0, this.w, this.top)
+    rect(this.x, height-this.bottom, this.w, this.bottom)
+
 
     }
 
-    image(deb, this.x, this.y, 60,60);
-  //  image(deb, this.x, height - this.bottom, 60,60);
+
+    image(deb, this.x, this.top, 60,60);
+    image(deb, this.x, height - this.bottom, 60,60);
+
   }
 
   this.update = function() {
