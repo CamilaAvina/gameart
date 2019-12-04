@@ -31,6 +31,7 @@ function Pipe() {
       noLoop();
       text('GAMEOVER', width/2, height/2);
     }
+
     
     image(deb, this.x, this.top, 60,60);
     image(deb, this.x, height - this.bottom, 60,60);
