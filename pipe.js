@@ -27,6 +27,7 @@ function Pipe(){
       fill (255, 0, 0);
       noLoop();
       text('GAMEOVER', width/2, height/2);
+
     }
     rect(this.x, 0, this.w, this.top)
     rect(this.x, height-this.bottom, this.w, this.bottom)
