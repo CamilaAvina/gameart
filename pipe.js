@@ -1,9 +1,8 @@
 function Pipe() {
   debris = [nes, car, trash];
-  this.top = random(height / 2.5);
+  this.top = random(height / 2.7);
   this.bottom = random(height / 2.5);
   var deb = debris[Math.floor(Math.random() * debris.length)];
-  console.log(deb);
   //this.debris = random(imageArray)
   // this.r = this.image.width
   // instead of top and bottom you will need this.y and this.r
@@ -32,7 +31,7 @@ function Pipe() {
       text('GAMEOVER', width/2, height/2);
     }
 
-    
+
     image(deb, this.x, this.top, 60,60);
     image(deb, this.x, height - this.bottom, 60,60);
 
