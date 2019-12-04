@@ -3,9 +3,7 @@ function Pipe() {
   this.y = random(height);
   //this.bottom = random(height / 2.5);
   var deb = debris[Math.floor(Math.random() * debris.length)];
-  //this.debris = random(imageArray)
-  // this.r = this.image.width
-  // instead of top and bottom you will need this.y and this.r
+
   this.x = width;
   this.w = 20;
   this.speed = 2;
@@ -13,17 +11,12 @@ function Pipe() {
   this.highlight = false;
 
   this.hits = function(ship) {
-    // if (ship.y < this.top || ship.y > height - this.bottom) {
-    //   if (ship.x > this.x && ship.x < this.x + 20) {
-    //     this.highlight = true;
-    //     return true;
-    //   }
-    // }
-    if (dist(ship.x, ship.y ,this.x, this.y)< 30){
+    if (dist(ship.x, ship.y, this.x, this.y) < 30) {
+      if (ship.x < 200){
 
       this.highlight = true;
-          return true;
-    }
+      return true;
+    }}
 
 
     this.highlight = false;
@@ -39,8 +32,8 @@ function Pipe() {
 
     }
 
-    image(deb, this.x, this.y, 60,60);
-  //  image(deb, this.x, height - this.bottom, 60,60);
+    image(deb, this.x, this.y, 60, 60);
+    //  image(deb, this.x, height - this.bottom, 60,60);
   }
 
   this.update = function() {
