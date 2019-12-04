@@ -1,12 +1,11 @@
 function Pipe() {
   debris = [nes, car, trash];
   this.y = random(height);
-  //this.bottom = random(height / 2.5);
   var deb = debris[Math.floor(Math.random() * debris.length)];
 
   this.x = width;
   this.w = 20;
-  this.speed = 2; 
+  this.speed = 2;
 
   this.highlight = false;
 
@@ -33,7 +32,6 @@ function Pipe() {
     }
 
     image(deb, this.x, this.y, 60, 60);
-    //  image(deb, this.x, height - this.bottom, 60,60);
   }
 
   this.update = function() {
