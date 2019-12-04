@@ -2,6 +2,7 @@ let bg;
 let index;
 let state = 'title';
 let cnv;
+let button;
 var ship;
 var pipes = [];
 function setup() {
@@ -29,6 +30,7 @@ function draw() {
     level1();
     //cnv.mouseClicked(level1MousedClicked);
   }
+
 
 
 
