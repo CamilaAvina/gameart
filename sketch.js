@@ -9,8 +9,8 @@ function setup() {
   bg = loadImage('assets/space.png');
   img = loadImage('assets/spaceship.png');
   nes = loadImage('assets/NES.png');
-  car = loadImage('assets/car.jpg');
-  trash = loadImage('assets/trash.jpg');
+  car = loadImage('assets/car.png');
+  trash = loadImage('assets/trash.png');
 
 
 
