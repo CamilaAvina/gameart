@@ -6,7 +6,7 @@ function Pipe() {
 
   this.x = width;
   this.w = 20;
-  this.speed = 2;
+  this.speed = 2; 
 
   this.highlight = false;
 
