@@ -8,6 +8,11 @@ function setup() {
   bg1 = loadImage('assets/Shatterdearth.png');
   bg = loadImage('assets/space.png');
   img = loadImage('assets/spaceship.png');
+  nes = loadImage('assets/NES.png');
+  car = loadImage('assets/car.jpg');
+  trash = loadImage('assets/trash.jpg');
+
+
 
   createCanvas(1100, 400);
   ship = new Ship()
