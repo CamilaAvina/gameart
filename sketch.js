@@ -5,6 +5,8 @@ let cnv;
 var ship;
 var pipes = [];
 let button;
+
+
 function setup() {
   bg1 = loadImage('assets/Shatterdearth.png');
   bg = loadImage('assets/space.png');
@@ -13,12 +15,16 @@ function setup() {
   car = loadImage('assets/sketch.png');
   trash = loadImage('assets/trash.png');
 
-  button = createButton('GAMEOVER');
-button.position( width/2, height/2);
+button = createButton('GAMEOVER');
+
 button.mousePressed(title);
+button.size(100,50);
+button.style("background-color","#fc0000");
+button.style("color","#fff");
 
 
   createCanvas(1100, 400);
+  button.position( 550, 350);
   ship = new Ship()
   pipes.push(new Pipe());
 
@@ -57,7 +63,7 @@ function keyPressed(){
 }
 
 function title(){
-  button.hide();
+button.hide();
 background(bg1);
 textSize(100);
 stroke(255);
