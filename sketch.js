@@ -65,13 +65,13 @@ function keyPressed(){
 function title(){
 button.hide();
 background(bg1);
-textSize(100);
-stroke(255);
-text('Welcome',100,100);
+// textSize(100);
+// stroke(255);
+//text('Welcome',100,100);
 // bird.update();
 // bird.show();
-textSize(30);
-text('click anywhere to start',100,300);
+//textSize(30);
+//text('click anywhere to start',100,300);
 }
 
 function titleMouseClicked(){
